@@ -70,6 +70,7 @@
     "lodash": "^4.17.4",
     "material-ui": "^0.17.4",
     "moment": "^2.18.1",
+    "mongodb": "^2.2.26",
     "morgan": "^1.8.1",
     "node-sass": "^4.5.2",
     "path": "^0.12.7",
