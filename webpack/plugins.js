@@ -26,10 +26,12 @@ const plugins = ({isProduction, sourcePath, buildPath}) => {
         context: sourcePath
       }
     }),
-    new DashboardPlugin(),
     new CompressionPlugin({asset: "[path].gz[query]", algorithm: "gzip", test: /\.js$|\.css$|\.html$/, threshold: 10240, minRatio: 0.8})
 
   ];
+  if (!isProduction) {
+    pluginArray.concat([new DashboardPlugin()])
+  }
   if (isProduction) {
     pluginArray.concat([
       new webpack.optimize.AggressiveMergingPlugin(),
