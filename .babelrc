@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "transform-class-properties",
+    "syntax-decorators",
+    "transform-decorators-legacy"
+  ],
+  "presets": [
+    "env",
+    "react",
+    "stage-2",
+  ],
+}
